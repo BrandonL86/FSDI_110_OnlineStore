@@ -1,0 +1,35 @@
+.about{
+    font-size: large;
+    display: flex;
+    width: 100%;
+}
+
+.about .text{
+    margin: 3%;
+    text-align: left;
+    line-height: 2;
+    align-items: center;
+    justify-content: center;
+    color: rgb(11, 166, 114);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about .owner{
+    margin: 1.5%;
+}
+
+.owner{
+    width: 28%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .about{
+        flex-direction: column !important;
+        display: block;
+        width: 100%;
+        margin: 2%;
+        padding: 5%;
+    }
+}

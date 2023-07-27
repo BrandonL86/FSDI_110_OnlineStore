@@ -1,0 +1,9 @@
+.product{
+    display: inline-block;
+    margin:25px;
+    height: 250px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 5px;
+}
+

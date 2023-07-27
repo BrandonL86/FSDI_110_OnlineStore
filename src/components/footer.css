@@ -1,0 +1,95 @@
+.footer{
+    width: 100%;
+    background-color:rgb(246, 246, 246);
+    padding: 5px;
+    margin:3px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.footer .visitstore{
+    display: flex;
+    text-align: left;
+    padding: 30px;
+    border-bottom: 2px solid lightgray;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .footer .visitstore {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .footer .visitstore{
+      width: 100%;
+    }
+  }
+
+.footer .visitstore .text{
+    text-align: left;
+    padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .footer .visitstore .text {
+    text-align: center;
+    }
+
+    .footer .visitstore{
+      width: 100%;
+    }
+  }
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .footer .footer-content {
+        flex-direction: column !important;
+        display: block;
+        align-items: center;
+    }
+
+    .footer .footer-content{
+      width: 100%;
+    }
+  }
+
+.footer .footer-section{
+    width: auto;
+    padding: 30px;
+    margin: 2px;
+    text-align: left;
+}
+
+.footer .newsletter-text{
+    text-align: left;
+}
+
+.footer #subscribe{
+    width: 100%;
+    margin-top: 8px;
+    background-color:  rgb(174, 242, 174);
+    border: none;
+    color: cadetblue;
+}
+
+.footer .footer-bottom{
+    background-color:  rgb(174, 242, 174);
+    color: cadetblue;
+
+}

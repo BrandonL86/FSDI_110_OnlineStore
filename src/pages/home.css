@@ -1,0 +1,162 @@
+.home {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .home {
+    flex-direction: column !important;
+    width: 100%;
+    height: auto;
+    }
+}
+
+
+.home .container-fluid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(254, 213, 5);
+}
+
+
+.home .container-fluid .text .landing-photo {
+    width: 100%;
+    margin: 1%;
+}
+
+.landing-photo{
+    width: 70%;
+    height: auto;
+}
+
+.home .container-fluid .text .summer-mode{
+    font-size: 56px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(247, 250, 252);
+}
+
+.home .container-fluid .text .summer-mode strong{
+    color: rgba(255, 44, 11, 0.905);
+}
+
+
+
+.home #catalogbtn{
+    background-color:  rgb(174, 242, 174);
+    border: none;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .home .container-fluid {
+        flex-direction: column !important;
+        padding: 2%;
+        width: 100%;
+    }
+    .landing-photo{
+        width: 100%;
+        height:auto
+    }
+    #catalogbtn {
+        padding: 2%;
+        margin: 2%;
+    
+    }
+}
+
+.home .image-container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .home .image-container {
+        flex-direction: column !important;
+        width: 100%;
+    }
+}
+
+.home .container-fluid-plant-match {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
+
+.home .container-fluid-plant-match .plant-text {
+    width: 100%;
+    margin: 3%;
+    text-align: left;
+}
+
+.home .container-fluid-plant-match img{
+    padding: 30px;
+}
+
+.home .container-fluid-plant-match .plant-text .quiz{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+.home #quizbtn{
+    background-color:  rgb(174, 242, 174);
+    border: none;
+    color: cadetblue;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .home .container-fluid-plant-match {
+        flex-direction: column !important;
+        display: block;
+        width: 100%;
+    }
+
+    .plant-text .quiz {
+        text-align: center;
+    }
+}
+
+.home .sill-container{
+    width: 100%;
+    margin: 3%;
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .home .sill-container {
+        flex-direction: column !important;
+    }
+
+    .home .sill-container {
+    width: 100%;
+    }
+}
+
+.home .sill-container .flex-items{
+    display: block;
+    text-align: left;
+    justify-content: space-between;
+    margin: 2%;
+    padding: 20px;
+}
