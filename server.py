@@ -1,7 +1,8 @@
-from flask import Flask, request
+from flask import Flask, request, abort
 import json
 from config import db
 from flask_cors import CORS
+from bson import ObjectId
 
 app = Flask(__name__)
 CORS(app) # warning: disable CORS check
@@ -109,6 +110,15 @@ def get_categories():
     results.sort()
     return json.dumps(results)
 
+@app.delete('/api/products/<id>')
+def delete_product(id):
+    if ObjectId.is_valid(id):
+        db_id =ObjectId(id)
+    else: abort(400, "Id not found")
+    db.products.delete_one({"_id": db_id})
+    response = {"message": "Product deleted"}
+    return json.dumps(response)
+
 
 @app.get('/api/coupons')
 def get_coupons():
@@ -124,6 +134,16 @@ def saveCoupon():
     coupon = request.get_json()
     db.coupons.insert_one(coupon)
     return json.dumps(fix_id(coupon))
+
+@app.delete("/api/coupons/<id>")
+def delete_coupon(id):
+    if ObjectId.is_valid(id):
+        db_id = ObjectId(id)
+    else: abort(400, "Invalid id")
+    
+    db.coupons.delete_one({"_id": db_id})
+    response = {"message": "coupon deleted"}
+    return json.dumps(response)
 
 # SJC=124388
 # Create an endpoint that return the number of products in the catalog
